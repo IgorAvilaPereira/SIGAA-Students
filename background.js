@@ -11,7 +11,8 @@ function script(conteudo) {
   // conteudo.value = resultado;    
   // window.open("", resultado);
   newpopupWindow = window.open('', 'pagina', "width=400 height=400");
-  newpopupWindow.document.write(resultado);
+  newpopupWindow.document.write("");
+  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3) > b").innerText + "<br>"+ resultado);
   // return resultado;
   // document.querySelector("#conteudo_extension").value =  resultado;
 }
