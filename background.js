@@ -1,20 +1,16 @@
 function script(conteudo) {
   var linhas = document.querySelector("#form > fieldset > table").rows.length;
   var i = 1;
-  var resultado = document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>";
+  var resultado = "";
+  // var resultado = document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>";
   i++;
   while (i < linhas) {
-    resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>";
+    resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
     i++;
-  }
-  // console.log(conteudo);
-  // conteudo.value = resultado;    
-  // window.open("", resultado);
+  }  
   newpopupWindow = window.open('', 'pagina', "width=400 height=400");
   newpopupWindow.document.write("");
-  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);
-  // return resultado;
-  // document.querySelector("#conteudo_extension").value =  resultado;
+  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);  
 }
 
 document.addEventListener("DOMContentLoaded", function () {
