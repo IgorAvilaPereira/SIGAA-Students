@@ -2,8 +2,8 @@ function script(conteudo) {
   var linhas = document.querySelector("#form > fieldset > table").rows.length;
   var i = 1;
   var resultado = "";
-  // var resultado = document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>";
-  i++;
+  // var resultado = document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
+  // i++;
   while (i < linhas) {
     resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
     i++;
