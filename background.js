@@ -10,7 +10,9 @@ function script(conteudo) {
   }  
   newpopupWindow = window.open('', 'pagina', "width=400 height=400");
   newpopupWindow.document.write("");
-  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);  
+  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
+//  baixando todos os trabalhos!
+  document.querySelector("#form > fieldset > p > a").click();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
