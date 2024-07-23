@@ -7,12 +7,13 @@ function script(conteudo) {
   while (i < linhas) {
     resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
     i++;
-  }  
+  }
+  //  baixando todos os trabalhos!
+  document.querySelector("#form > fieldset > p > a").click();    
   newpopupWindow = window.open('', 'pagina', "width=400 height=400");
   newpopupWindow.document.write("");
   newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
-//  baixando todos os trabalhos!
-  document.querySelector("#form > fieldset > p > a").click();
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
