@@ -13,7 +13,7 @@ function script(conteudo) {
       newpopupWindow = window.open('', 'pagina', "");
 //    newpopupWindow.document.title = document.querySelector("#form > fieldset > div:nth-child(3)").innerText;
       newpopupWindow.document.write("");
-      newpopupWindow.document.write("<br>================<br>"+document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
+      newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
   }
 }
 
