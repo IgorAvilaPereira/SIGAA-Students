@@ -6,12 +6,15 @@ function script(conteudo) {
     resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
     i++;
   }
-  //  baixando todos os trabalhos!
-  document.querySelector("#form > fieldset > p > a").click();    
-  
-  newpopupWindow = window.open('', 'pagina', "");
-  newpopupWindow.document.write("");
-  newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
+  if (linhas > 0){
+      //  baixando todos os trabalhos!
+      document.querySelector("#form > fieldset > p > a").click();     
+      
+      newpopupWindow = window.open('', 'pagina', "");
+//    newpopupWindow.document.title = document.querySelector("#form > fieldset > div:nth-child(3)").innerText;
+      newpopupWindow.document.write("");
+      newpopupWindow.document.write("<br>================<br>"+document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>"+ resultado);    
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
