@@ -1,5 +1,7 @@
 # SIGAA-Students
 
+Extensão para o Google Chrome que estende as funcionalidades do SIGAA facilitando a correção de atividades.
+
 ## Instalação
 
 1) Baixar a extensão em formato .zip 
