@@ -1,5 +1,3 @@
-newpopupWindow = null;
-
 function script2(conteudo) {
   var tabela = document.querySelector(".listing");
   var linhas = tabela.rows; 
@@ -16,9 +14,6 @@ function script2(conteudo) {
       segundaColuna.push(linhas[i].innerText);    
   }  
   if (primeiraColuna.length > 0) { 
-    if (newpopupWindow != null) {
-      newpopupWindow.close();
-    }
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
     var output = "";
@@ -43,9 +38,6 @@ function script1(conteudo) {
   if (linhas > 0) {
     //  baixando todos os trabalhos!
     document.querySelector("#form > fieldset > p > a").click();
-    if (newpopupWindow != null) {
-      newpopupWindow.close();
-    }
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
     newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>" + resultado);    
