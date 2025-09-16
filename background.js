@@ -40,7 +40,7 @@ function script1(conteudo) {
     document.querySelector("#form > fieldset > p > a").click();
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
-    newpopupWindow.document.write(document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>" + resultado);    
+    newpopupWindow.document.write(document.getElementById("linkNomeTurma").innerText+" <br> <br>"+ document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>" + resultado);    
   }
 }
 
