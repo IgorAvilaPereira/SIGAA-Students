@@ -31,7 +31,7 @@ function script1(conteudo) {
   var i = 1;
   var resultado = "";
   while (i < linhas) {
-    resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br>================<br>";
+    resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br><br>================<br><br>";
     i++;
   }
   if (linhas > 0) {
