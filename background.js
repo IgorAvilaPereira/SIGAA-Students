@@ -40,7 +40,7 @@ function script1(conteudo) {
 
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
-    newpopupWindow.document.write(document.getElementById("linkNomeTurma").innerText+"<br> <br>"+ document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br>" + resultado);    
+    newpopupWindow.document.write(document.getElementById("linkNomeTurma").innerText+"<br>"+ document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br>" + resultado);    
   }
 }
 
