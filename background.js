@@ -16,11 +16,10 @@ function script2(conteudo) {
   if (primeiraColuna.length > 0) { 
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
-    var output = "Trabalhos: "+document.getElementById("linkNomeTurma").innerText+" <br> <br>";
+    var output = document.getElementById("linkNomeTurma").innerText+" <br> <br>";
     for (let index = 0; index < primeiraColuna.length; index++) {
       var element1 = primeiraColuna[index];            
-      var element2 = segundaColuna[index];
-      output+= element1+"<br> <br>";           
+      var element2 = segundaColuna[index];        
       output+= "* "+element1+" - "+element2+"<br>";                  
     }
     newpopupWindow.document.write(output);
