@@ -3,11 +3,20 @@
 <head>
     <title>SIGAAmes</title>
     <script src="background.js"></script>
+    <style>
+    html, body {
+      width: 400px;   /* Largura do popup */
+      height: 200px;  /* Altura do popup */
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto; /* Para rolagem caso o conteúdo extrapole */
+    }
+  </style>
 </head>
 <body>
-    <!-- <textarea id="conteudo_extension" rows="20" cols="50"> </textarea> -->
-    <button id="btn1">Avaliar Tarefas</button>
-    <button id="btn2">Tarefas e Datas</button>
+    Atividades >> Tarefas <button id="btn2">Tarefas e Datas</button> <br> <br>
+    Atividades >> Tarefas >> Avaliar Tarefas Enviadas >> <button id="btn1">Avaliar Tarefas</button>    
 </body>
 
 </html>
