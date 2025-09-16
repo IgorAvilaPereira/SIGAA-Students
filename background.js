@@ -16,7 +16,7 @@ function script2(conteudo) {
   if (primeiraColuna.length > 0) { 
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
-    var output = "";
+    var output = "## Trabalhos:"+document.getElementById("linkNomeTurma").innerText+" <br> <br>";
     for (let index = 0; index < primeiraColuna.length; index++) {
       var element1 = primeiraColuna[index];      
       output+= "### " +element1+"<br> <br>";           
