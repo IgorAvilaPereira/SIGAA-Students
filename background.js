@@ -29,7 +29,7 @@ function script2(conteudo) {
 function script1(conteudo) {
   var linhas = document.querySelector("#form > fieldset > table").rows.length;
   var i = 1;
-  var resultado = "";
+  var resultado = "<br><br>================<br><br>";
   while (i < linhas) {
     resultado += document.querySelector("#form > fieldset > table").rows[i].cells[2].innerText + "<br><br>================<br><br>";
     i++;
@@ -37,6 +37,7 @@ function script1(conteudo) {
   if (linhas > 0) {
     //  baixando todos os trabalhos!
     document.querySelector("#form > fieldset > p > a").click();
+    
     newpopupWindow = window.open('', 'pagina', "");
     newpopupWindow.document.write("");
     newpopupWindow.document.write(document.getElementById("linkNomeTurma").innerText+" <br> <br>"+ document.querySelector("#form > fieldset > div:nth-child(3)").innerText + "<br><br>" + resultado);    
