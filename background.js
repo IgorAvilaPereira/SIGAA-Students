@@ -1,3 +1,14 @@
+function script3(conteudo) {
+  const colunasTop = document.querySelectorAll('table.participantes td[valign="top"], table.participantes th[valign="top"]');
+  var output = "";
+  colunasTop.forEach(td => {
+    output += td.textContent +"<br><br>";
+  });
+  newpopupWindow = window.open('', 'pagina', "");
+  newpopupWindow.document.write("");
+  newpopupWindow.document.write("<h3>"+document.getElementById("linkNomeTurma").innerText + "</h3><br>" + output + "<hr> <h3>Lista de E-mail dos discentes da turma:</h3><br> "+document.getElementById("divEmails").innerHTML);
+}
+
 function script2(conteudo) {
   var tabela = document.querySelector(".listing");
   var linhas = tabela.rows;
@@ -72,6 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         func: script2
+      });
+    })()
+  });
+
+  document.querySelector("#btn3").addEventListener("click", function () {
+    (async () => {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        func: script3
       });
     })()
   });
