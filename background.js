@@ -2,7 +2,7 @@ function script3(conteudo) {
   const colunasTop = document.querySelectorAll('table.participantes td[valign="top"], table.participantes th[valign="top"]');
   var output = "";
   colunasTop.forEach(td => {
-    output += td.textContent +"<br><br>";
+    output += td.textContent +"<br>";
   });
   newpopupWindow = window.open('', 'pagina', "");
   newpopupWindow.document.write("");
