@@ -2,7 +2,7 @@ function script3(conteudo) {
   const colunasTop = document.querySelectorAll('table.participantes td[valign="top"], table.participantes th[valign="top"]');
   var output = "";
   colunasTop.forEach(td => {
-    output += td.innerText.trim().replace("\n", ";")..replace("Formação:",";").replace("Matrícula:", ";").replace("Departamento:","").replace("Curso:", "").replace("E-Mail:",";").replace("E-mail:", ";") +"<br>";
+    output += td.innerText.trim().replace("\n", ";").replace("Formação:",";").replace("Matrícula:", ";").replace("Departamento:","").replace("Curso:", "").replace("E-Mail:",";").replace("E-mail:", ";") +"<br>";
   });
   newpopupWindow = window.open('', 'pagina', "");
   newpopupWindow.document.write("");
