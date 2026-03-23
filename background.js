@@ -7,6 +7,11 @@ function script4(){
   notaMaxima.style.display = isHidden ? "block" : "none";
   label.style.display = isHidden ? "block" : "none";
   valor.style.display = isHidden ? "block" : "none";
+
+  if (valor.style.display == "none") {
+    document.getElementById("formAva:notaMaxima").value = -1.0;
+    document.getElementById("formAva:notaMaxima").textContent = "Sem Nota";
+  }  
 }
 
 function script3(conteudo) {
