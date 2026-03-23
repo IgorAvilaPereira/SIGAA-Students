@@ -10,7 +10,8 @@ function script4(){
 
   if (valor.style.display == "none") {
     document.getElementById("formAva:notaMaxima").value = -1.0;
-    document.getElementById("formAva:notaMaxima").textContent = "Sem Nota";
+    let select = document.getElementById("formAva:notaMaxima");
+    select.options[select.selectedIndex].text = "Sem Nota";
   }  
 }
 
