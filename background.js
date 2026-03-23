@@ -1,3 +1,14 @@
+function script4(){
+  let notaMaxima = document.getElementById("notaMaxima");
+  let label = document.getElementById("labelNotaMaximaUnidade");
+  let valor = document.getElementById("valorNotaMaximaUnidade");
+
+  let isHidden = window.getComputedStyle(notaMaxima).display === "none";
+  notaMaxima.style.display = isHidden ? "block" : "none";
+  label.style.display = isHidden ? "block" : "none";
+  valor.style.display = isHidden ? "block" : "none";
+}
+
 function script3(conteudo) {
   const colunasTop = document.querySelectorAll('table.participantes td[valign="top"], table.participantes th[valign="top"]');
   var output = "";
@@ -93,6 +104,16 @@ document.addEventListener("DOMContentLoaded", function () {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         func: script3
+      });
+    })()
+  });
+
+  document.querySelector("#btn4").addEventListener("click", function () {
+    (async () => {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        func: script4
       });
     })()
   });
