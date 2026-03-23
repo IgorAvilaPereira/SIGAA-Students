@@ -9,7 +9,7 @@ function script4(){
   valor.style.display = isHidden ? "block" : "none";
 
   if (valor.style.display == "none") {
-    const select = document.getElementById("meuSelect");
+    const select = document.getElementById("formAva:notaMaxima");
     select.selectedIndex = 0; // terceira option
     // document.getElementById("formAva:notaMaxima").value = -1.0;
     // let select = document.getElementById("formAva:notaMaxima");
